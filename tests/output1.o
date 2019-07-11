@@ -1,0 +1,50 @@
+NAME | TYPE | VALUE | SECTION | SCOPE | INDEX | SIZE | RWX 
+UND | sekcija | 0 | 0 | l | 0 | 0 | rw
+b | simbol | 0 | 0 | g | 1 | 0 | 
+text | sekcija | 0 | 2 | l | 2 | 41 | x
+d | simbol | 16 | 2 | l | 3 | 0 | 
+data | sekcija | 0 | 4 | l | 4 | 24 | rw
+e | simbol | 8 | 4 | l | 5 | 0 | 
+a | simbol | 20 | 4 | g | 6 | 0 | 
+bss | sekcija | 0 | 7 | l | 7 | 8 | rw
+c | simbol | 0 | 7 | g | 8 | 0 | 
+
+
+#.ret.text
+OFFSET | TYPE | VALUE
+2 | R_386_PC32 | 6
+6 | R_386_PC32 | 4
+10 | R_386_PC32 | 1
+14 | R_386_PC32 | 2
+16 | R_386_32 | 2
+23 | R_386_32 | 1
+27 | R_386_32 | 8
+33 | R_386_32 | 4
+
+#.ret.data
+OFFSET | TYPE | VALUE
+8 | R_386_32 | 6
+12 | R_386_32 | 8
+16 | R_386_32 | 7
+20 | R_386_32 | 1
+
+
+#.text
+a4 8e fe ff 
+a4 8e 06 00 
+a4 8e fe ff 
+a4 8e 0e 00 
+10 00 00 00 
+24 20 00 00 00 
+24 a0 00 00 20 
+24 20 a0 08 00 
+
+#.data
+00 00 00 00 00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+
+
+

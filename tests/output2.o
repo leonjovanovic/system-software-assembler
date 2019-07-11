@@ -1,0 +1,38 @@
+NAME | TYPE | VALUE | SECTION | SCOPE | INDEX | SIZE | RWX 
+UND | sekcija | 0 | 0 | l | 0 | 0 | rw
+text | sekcija | 0 | 1 | l | 1 | 0 | x
+a | simbol | 0 | 1 | l | 2 | 0 | 
+data | sekcija | 0 | 3 | l | 3 | 36 | rw
+dataLabela | simbol | 0 | 3 | l | 4 | 0 | 
+d | simbol | 13 | 3 | g | 5 | 0 | 
+e | simbol | 32 | 3 | l | 6 | 0 | 
+rodata | sekcija | 0 | 7 | l | 7 | 2 | r
+s | simbol | 0 | 7 | l | 8 | 0 | 
+bss | sekcija | 0 | 9 | l | 9 | 8 | rw
+k | simbol | 0 | 9 | l | 10 | 0 | 
+
+
+#.ret.text
+OFFSET | TYPE | VALUE
+
+#.ret.data
+OFFSET | TYPE | VALUE
+
+#.ret.rodata
+OFFSET | TYPE | VALUE
+
+
+#.text
+
+#.data
+01 02 03 
+00 00 00 00 00 00 00 00 00 00 
+60 e3 16 00 0b 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 
+06 00 07 00 
+
+#.rodata
+04 05 
+
+
+
